@@ -1,0 +1,106 @@
+@import '../../theme/variables.scss';
+
+.page {
+    background: linear-gradient(to top, var(--gradient-light-blue) 0%, var(--gradient-white) 0%, var(--gradient-dark-blue) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    gap: 22px;
+    flex-direction: column;
+    background: #F3F8FF;
+    padding: 24px 28px;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 14px !important;
+    @include normal-black;
+    margin-bottom: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+    > div {
+        border-bottom: 1px solid var(--text-primary);
+        padding: 0 4px 6px;
+    
+    
+        ion-input {
+            height: fit-content;
+            min-height: fit-content;
+            --placeholder-opacity: 1;
+            @include normal-black;
+
+        }
+    }
+}
+
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    gap: 38px;
+    @include small-black;
+
+    .no-account {
+        display: flex;
+        gap: 4px;
+    }
+
+    .link {
+        @include small-link;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.sign-in {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    ion-button {
+        width: 116px;
+        --border-radius: 12px;
+        @include normal-button;
+        min-height: 36px;
+        height: 36px;
+    }
+}
+
+ion-button {
+    --background: var(--button-primary);
+    --color: white;
+}
+
+.footer {
+    @include small-black;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+
+        ion-button {
+            --padding-top: 10px;
+            --padding-bottom: 10px;
+            --padding-start: 10px;
+            --padding-end: 10px;
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
