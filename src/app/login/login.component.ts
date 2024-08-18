@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { IonicModule } from '@ionic/angular'
+import { IonInput, IonButton, IonIcon } from '@ionic/angular/standalone';
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
-  imports: [IonicModule],
+  imports: [IonInput, IonButton, IonIcon],
   standalone: true
 })
 export class LoginComponent {
