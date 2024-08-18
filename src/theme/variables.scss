@@ -1,2 +1,37 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+
+:root {
+    --gradient-light-blue: #219EBC;
+    --gradient-white: #F5F8FF;
+    --gradient-dark-blue: #023047;
+    --text-primary: #023047;
+    --text-link: #8ECAE6;
+    --button-primary: #023047;
+    --ion-font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+@mixin normal-black {
+    color: var(--text-primary);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@mixin small-black {
+    color: var(--text-primary);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+@mixin small-link {
+    color: var(--text-link);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+@mixin normal-button {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
