@@ -7,8 +7,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ios:open": "ng build && npx cap sync ios && npx cap open ios",
-    "build:android:open": "ng build && npx cap sync android && npx cap open android",
+    "build:ios:open": "ionic capacitor build ios",
+    "build:android:open": "ionic capacitor build android",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"

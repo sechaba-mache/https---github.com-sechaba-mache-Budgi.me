@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.budgime.app',
+  appId: 'io.ionic.starter',
   appName: 'Budgi.me',
   webDir: 'www'
 };
