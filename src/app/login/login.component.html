@@ -1,7 +1,7 @@
 <div class="page">
   <div class="login">
     <h1>
-        Sign In
+        {{signUp ? "Sign up" : "Login"}}
     </h1>
 
     <div class="form">
@@ -14,13 +14,18 @@
     </div>
 
     <div class="sign-up">
-      <span class="no-account">Don't have an account?<p class="link">Sign up</p></span>
-      <span class="link">Forgot Password?</span>
+      <span class="no-account">
+        {{!signUp ? "Already have an account?" : "Don't have an account?"}}
+        <p class="link" (click)="signUpPage()">
+          {{!signUp ? "Sign up" : "Sign in"}}
+        </p>
+      </span>
+      <span class="link" *ngIf="!signUp">Forgot Password?</span>
     </div>
 
     <div class="sign-in">
       <ion-button>
-        Sign in
+        {{signUp ? "Sign up" : "Login"}}
       </ion-button>
     </div>
 
