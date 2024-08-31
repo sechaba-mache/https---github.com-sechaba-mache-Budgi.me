@@ -21,7 +21,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'add-category',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
 ];
