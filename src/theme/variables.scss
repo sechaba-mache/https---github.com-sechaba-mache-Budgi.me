@@ -6,7 +6,7 @@
     --gradient-white: #F5F8FF;
     --gradient-dark-blue: #023047;
     --primary: #023047;
-    --link: #8ECAE6;
+    --text-link: #8ECAE6;
     --button-primary: #023047;
     --ion-font-family: 'Inter', sans-serif;
     font-family: 'Inter', sans-serif;
@@ -25,7 +25,7 @@
 }
 
 @mixin small-link {
-    color: var(--link);
+    color: var(--text-link);
     font-size: 10px;
     font-weight: 600;
 }
