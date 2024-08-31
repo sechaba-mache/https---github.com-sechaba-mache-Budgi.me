@@ -5,27 +5,27 @@
     --gradient-light-blue: #219EBC;
     --gradient-white: #F5F8FF;
     --gradient-dark-blue: #023047;
-    --text-primary: #023047;
-    --text-link: #8ECAE6;
+    --primary: #023047;
+    --link: #8ECAE6;
     --button-primary: #023047;
     --ion-font-family: 'Inter', sans-serif;
     font-family: 'Inter', sans-serif;
 }
 
 @mixin normal-black {
-    color: var(--text-primary);
+    color: var(--primary);
     font-size: 12px;
     font-weight: 600;
 }
 
 @mixin small-black {
-    color: var(--text-primary);
+    color: var(--primary);
     font-size: 10px;
     font-weight: 600;
 }
 
 @mixin small-link {
-    color: var(--text-link);
+    color: var(--link);
     font-size: 10px;
     font-weight: 600;
 }
@@ -33,5 +33,23 @@
 @mixin normal-button {
     color: white;
     font-size: 16px;
+    font-weight: 600;
+}
+
+@mixin xl-black {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@mixin large-black {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@mixin medium-black {
+    color: var(--primary);
+    font-size: 12px;
     font-weight: 600;
 }

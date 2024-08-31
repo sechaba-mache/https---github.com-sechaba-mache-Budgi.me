@@ -1,3 +1,43 @@
-<p>
-  receipt works!
-</p>
+<ion-content class="content">
+  <div class="white-bar"></div>
+  <div class="category">
+    <span class="xl-text">Category Reciepts</span>
+  </div>
+
+  <div class="table-section">
+    <div class="receipt-header">
+      <span class="left-panel large-text">Receipt Name</span>
+      <div class="right-panel">
+        <span class="large-text">Spent</span>
+        <span class="large-text">Balance</span>
+      </div>
+    </div>
+
+    <div class="items">
+      <!-- ng container needs to loop and items created dynamically -->
+      <ng-container>
+        <div class="table-item">
+          <span class="left-panel med-text">Mr D</span>
+          <div class="right-panel">
+            <span class="med-text">R130</span>
+            <span class="med-text">R1700</span>
+          </div>
+        </div>
+        <div class="table-item">
+          <span class="left-panel med-text">Uber</span>
+          <div class="right-panel">
+            <span class="med-text">R70</span>
+            <span class="med-text">R1630</span>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+
+    <div class="table-bottom">
+      <div class="right-panel">
+        <span class="med-text">R200</span>
+        <span class="med-text">R1630</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

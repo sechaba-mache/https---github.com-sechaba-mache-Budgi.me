@@ -1,3 +1,74 @@
-* {
-    background-color: white;
+@import '../../../theme/variables.scss';
+
+.xl-text {
+    @include xl-black; 
+}
+
+.large-text {
+    @include large-black;
+}
+
+.med-text {
+    @include medium-black;
+}
+
+.white-bar {
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.content {
+    --padding-top: 78px;
+    --padding-start: 24px;
+    --padding-end: 24px;
+    --padding-bottom: 24px;
+    --background: white;
+}
+
+.category {
+    margin-bottom: 16px;
+}
+
+.receipt-header {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 4px;
+}
+
+.left-panel {
+    width: 70%;
+}
+
+.right-panel {
+    display: flex;
+    justify-content: space-around;
+    * {
+        text-align: center;
+        width: 86px;
+    }
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 0 16px 8px;
+    gap: 28px;
+
+    .table-item {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.table-bottom {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 12px;
+    border-top: 1px solid var(--primary);
 }
