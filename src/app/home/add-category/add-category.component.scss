@@ -1,0 +1,73 @@
+@import '../../../theme/variables.scss';
+
+.xxl-text {
+    @include xxl-black;
+}
+
+.large-text {
+    @include large-black;
+}
+
+.page {
+    background: linear-gradient(to top, var(--gradient-light-blue) 0%, var(--gradient-white) 0%, var(--gradient-dark-blue) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    color: black;
+    width: 314px;
+    height: 610px;
+    padding: 18px 46px 30px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 28px;
+    text-align: center;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .total-text {
+        opacity: 0.5;
+    }
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 64px;
+
+    ion-input {
+        min-height: 24px;
+        border-bottom: 1px solid var(--primary);
+        --placeholder-opacity: 0.5;
+    }
+}
+
+ion-button {
+    --background: var(--button-primary);
+    --color: white;
+    --border-radius: 12px;
+    width: 116px;
+    @include normal-button;
+    min-height: 36px;
+    height: 36px;
+}

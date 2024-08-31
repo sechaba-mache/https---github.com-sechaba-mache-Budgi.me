@@ -32,7 +32,7 @@
 
 @mixin normal-button {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -51,5 +51,11 @@
 @mixin medium-black {
     color: var(--primary);
     font-size: 12px;
+    font-weight: 600;
+}
+
+@mixin xxl-black {
+    color: var(--primary);
+    font-size: 20px;
     font-weight: 600;
 }
