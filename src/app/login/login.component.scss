@@ -71,13 +71,6 @@ h1 {
     display: flex;
     justify-content: center;
     width: 100%;
-    ion-button {
-        width: 116px;
-        --border-radius: 12px;
-        @include normal-button;
-        min-height: 36px;
-        height: 36px;
-    }
 }
 
 ion-button {

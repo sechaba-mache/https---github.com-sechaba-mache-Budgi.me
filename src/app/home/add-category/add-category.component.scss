@@ -61,13 +61,3 @@
         --placeholder-opacity: 0.5;
     }
 }
-
-ion-button {
-    --background: var(--button-primary);
-    --color: white;
-    --border-radius: 12px;
-    width: 116px;
-    @include normal-button;
-    min-height: 36px;
-    height: 36px;
-}
